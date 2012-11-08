@@ -3,17 +3,18 @@
   width: $slide_img_width;
   height: 5px;
   background: $slide_progress_bar_color;
-  -webkit-animation: progressBarExpand $slide_total_time ease-out infinite;
+  @include animation(progressBarExpand $slide_total_time ease-out infinite);
 }
 
 #{$slide_slider}:hover #{$slide_progress_bar} /* #slider:hover .progress_bar */ {
-  -webkit-animation-play-state: paused;
+  @include animation-play-state(paused);
 }
 
-// Start at 0 percent.
-$slide_percent: 0%;
 // Generating keyframes.
-@-webkit-keyframes progressBarExpand {
+@include keyframes(progressBarExpand) {
+  // Start at 0 percent.
+  $slide_percent: 0%;
+  // Loop through all images
   @for $i from 0 through $slide_nr_of_images - 1 {
     #{$slide_percent} { width: 0%; opacity: 0; }
     $slide_percent: $slide_percent + $slide_show_image_percent;

@@ -1,23 +1,23 @@
 #{$slide_mask} /* #mask */ {
   // Start animation.
   li {
-    -webkit-animation: cycle $slide_total_time $slide_timing_function infinite;
+    @include animation(cycle $slide_total_time $slide_timing_function infinite);
   }
 
   // Pause slideshow on hover.
   &:hover li {
-    -webkit-animation-play-state: paused;
+    @include animation-play-state(paused);
   }
 }
 
-// Start at 0 percent.
-$slide_percent: 0%;
 // Generating keyframes.
-@-webkit-keyframes cycle {
+@include keyframes(cycle) {
+  // Start at 0 percent.
+  $slide_percent: 0%;
   @for $i from 0 through $slide_nr_of_images - 1 {
-    #{$slide_percent} { -webkit-transform: translateX(-$slide_img_width * $i); }
+    #{$slide_percent} { @include transform(translateX(-$slide_img_width * $i)); }
     $slide_percent: $slide_percent + $slide_show_image_percent;
-    #{$slide_percent} { -webkit-transform: translateX(-$slide_img_width * $i); }
+    #{$slide_percent} { @include transform(translateX(-$slide_img_width * $i)); }
     $slide_percent: $slide_percent + $slide_percent_between_images;
   }
 }
