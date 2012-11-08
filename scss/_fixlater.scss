@@ -1,14 +1,12 @@
 #{$slide_slideshow} /* #content-slider */ {
   width: 100%;
   height: $slide_img_height;
-  margin: 10px auto 0;
 }
 
 #{$slide_slider} /* #slider */ {
   border: 5px solid #eaeaea;
   height: $slide_img_height;
   width: $slide_img_width;
-  margin: 40px auto 0;
   overflow: hidden;
   position: relative;
 }
