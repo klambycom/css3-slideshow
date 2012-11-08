@@ -1,0 +1,27 @@
+#mask {
+  // Start animation.
+  li {
+    -webkit-animation: cycle $slide_total_time linear infinite;
+  }
+
+  // Pause slideshow on hover.
+  &:hover li {
+    -webkit-animation-play-state: paused;
+  }
+}
+
+// Percent between images.
+$slide_percent_between_images: 5%;
+// Remaining percent divided by number of images.
+$slide_show_image_percent: (100% - ($slide_percent_between_images * $slide_nr_of_images)) / $slide_nr_of_images;
+// Start at 0 percent.
+$slide_percent: 0%;
+// Generating keyframes.
+@-webkit-keyframes cycle {
+  @for $i from 0 through $slide_nr_of_images - 1 {
+    #{$slide_percent} { -webkit-transform: translateX(-$slide_img_width * $i); }
+    $slide_percent: $slide_percent + $slide_show_image_percent;
+    #{$slide_percent} { -webkit-transform: translateX(-$slide_img_width * $i); }
+    $slide_percent: $slide_percent + $slide_percent_between_images;
+  }
+}

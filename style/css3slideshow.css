@@ -1,2 +1,55 @@
 img {
-  width: 500px; }
+  width: 680px;
+  height: 320px; }
+
+#content-slider {
+  width: 100%;
+  height: 320px;
+  margin: 10px auto 0; }
+
+#slider {
+  border: 5px solid #eaeaea;
+  height: 320px;
+  width: 680px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  position: relative; }
+
+#mask {
+  width: 2040px;
+  position: relative; }
+  #mask ul {
+    float: left;
+    padding: 0;
+    margin: 0; }
+  #mask li {
+    list-style: none;
+    position: relative; }
+    #mask li .tooltip {
+      position: absolute;
+      top: 0px;
+      left: 10px; }
+
+#mask li {
+  -webkit-animation: cycle 10s linear infinite; }
+#mask:hover li {
+  -webkit-animation-play-state: paused; }
+
+@-webkit-keyframes cycle {
+  0% {
+    -webkit-transform: translateX(0px); }
+
+  28.33333% {
+    -webkit-transform: translateX(0px); }
+
+  33.33333% {
+    -webkit-transform: translateX(-680px); }
+
+  61.66667% {
+    -webkit-transform: translateX(-680px); }
+
+  66.66667% {
+    -webkit-transform: translateX(-1360px); }
+
+  95.0% {
+    -webkit-transform: translateX(-1360px); } }
