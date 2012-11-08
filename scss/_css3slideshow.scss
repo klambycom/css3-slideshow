@@ -1,2 +1,27 @@
+// Number of images in slideshow.
+$slide_nr_of_images: 3 !default;
+// Width of one image.
+$slide_img_width: 680px !default;
+// Height of one image.
+$slide_img_height: 320px !default;
+// Total time for slideshow.
+$slide_total_time: 10s !default;
+
+// Id or class of slideshow.
+$slide_slideshow: "#content-slider" !default;
+// Id or class of slider.
+$slide_slider: "#slider" !default;
+// Id or class of mask.
+$slide_mask: "#mask" !default;
+// Id or class of progress bar.
+$slide_progress_bar: ".progress-bar" !default;
+
+// Percent between images.
+$slide_percent_between_images: 5%;
+// Remaining percent divided by number of images.
+$slide_show_image_percent: (100% - ($slide_percent_between_images * $slide_nr_of_images)) / $slide_nr_of_images;
+// Start at 0 percent.
+$slide_percent: 0%;
+
 @import "fixlater";
 @import "images_animation";

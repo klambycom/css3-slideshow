@@ -10,12 +10,6 @@
   }
 }
 
-// Percent between images.
-$slide_percent_between_images: 5%;
-// Remaining percent divided by number of images.
-$slide_show_image_percent: (100% - ($slide_percent_between_images * $slide_nr_of_images)) / $slide_nr_of_images;
-// Start at 0 percent.
-$slide_percent: 0%;
 // Generating keyframes.
 @-webkit-keyframes cycle {
   @for $i from 0 through $slide_nr_of_images - 1 {
