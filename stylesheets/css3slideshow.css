@@ -1,91 +1,55 @@
-img {
-  width: 680px;
-  height: 320px; }
+/*
+Syntax error: File to import not found or unreadable: compass.
+              Load paths:
+                /Users/christian/Dropbox/shared_between_computers/Kod/SKOLA/Webbteknisk Introduktion/CSS3 Slideshow
+                /Users/christian/Dropbox/shared_between_computers/Kod/SKOLA/Webbteknisk Introduktion/CSS3 Slideshow/scss
+        on line 30 of scss/_css3slideshow.scss
+        from line 15 of scss/css3slideshow.scss
 
-#slider {
-  margin: 40px auto 0; }
-
-#content-slider {
-  width: 100%;
-  height: 320px; }
-
-#slider {
-  border: 5px solid #eaeaea;
-  height: 320px;
-  width: 680px;
-  overflow: hidden;
-  position: relative; }
-
-#mask {
-  width: 2040px;
-  position: relative; }
-  #mask ul {
-    float: left;
-    padding: 0;
-    margin: 0; }
-  #mask li {
-    list-style: none;
-    position: relative; }
-    #mask li .tooltip {
-      position: absolute;
-      top: 0px;
-      left: 10px; }
-
-#mask li {
-  -webkit-animation: cycle 10s linear infinite; }
-#mask:hover li {
-  -webkit-animation-play-state: paused; }
-
-@-webkit-keyframes cycle {
-  0% {
-    -webkit-transform: translateX(0px); }
-
-  29.33333% {
-    -webkit-transform: translateX(0px); }
-
-  33.33333% {
-    -webkit-transform: translateX(-680px); }
-
-  62.66667% {
-    -webkit-transform: translateX(-680px); }
-
-  66.66667% {
-    -webkit-transform: translateX(-1360px); }
-
-  96.0% {
-    -webkit-transform: translateX(-1360px); } }
-
-.progress-bar {
-  position: relative;
-  width: 680px;
-  height: 5px;
-  background: white;
-  -webkit-animation: progressBarExpand 10s ease-out infinite; }
-
-#slider:hover .progress-bar {
-  -webkit-animation-play-state: paused; }
-
-@-webkit-keyframes progressBarExpand {
-  0% {
-    width: 0%;
-    opacity: 0; }
-
-  29.33333% {
-    width: 100%;
-    opacity: .7; }
-
-  33.33333% {
-    width: 0%;
-    opacity: 0; }
-
-  62.66667% {
-    width: 100%;
-    opacity: .7; }
-
-  66.66667% {
-    width: 0%;
-    opacity: 0; }
-
-  96.0% {
-    width: 100%;
-    opacity: .7; } }
+Backtrace:
+scss/_css3slideshow.scss:30
+scss/css3slideshow.scss:15
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/import_node.rb:42:in `import'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:227:in `rescue in visit_import'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:232:in `visit_import'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `map'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:234:in `watch'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin.rb:107:in `method_missing'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/exec.rb:431:in `watch_or_update'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/exec.rb:302:in `process_result'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/exec.rb:41:in `parse'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/exec.rb:21:in `parse!'
+/Users/christian/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.1/bin/scss:8:in `<top (required)>'
+/Users/christian/.rbenv/versions/1.9.3-p194/bin/scss:23:in `load'
+/Users/christian/.rbenv/versions/1.9.3-p194/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load paths:\A                 /Users/christian/Dropbox/shared_between_computers/Kod/SKOLA/Webbteknisk Introduktion/CSS3 Slideshow\A                 /Users/christian/Dropbox/shared_between_computers/Kod/SKOLA/Webbteknisk Introduktion/CSS3 Slideshow/scss\A         on line 30 of scss/_css3slideshow.scss\A         from line 15 of scss/css3slideshow.scss"; }

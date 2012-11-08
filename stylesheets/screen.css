@@ -1,0 +1,141 @@
+/* line 6, ../scss/screen.scss */
+img {
+  width: 680px;
+  height: 320px;
+}
+
+/* line 11, ../scss/screen.scss */
+#slider {
+  margin: 40px auto 0;
+}
+
+/* line 1, ../scss/_slideshow_layout.scss */
+#content-slider {
+  width: 100%;
+  height: 320px;
+}
+
+/* line 6, ../scss/_slideshow_layout.scss */
+#slider {
+  border: 5px solid #eaeaea;
+  height: 320px;
+  width: 680px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 14, ../scss/_slideshow_layout.scss */
+#mask {
+  width: 2040px;
+  position: relative;
+}
+/* line 19, ../scss/_slideshow_layout.scss */
+#mask ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+/* line 25, ../scss/_slideshow_layout.scss */
+#mask li {
+  list-style: none;
+  position: relative;
+}
+/* line 29, ../scss/_slideshow_layout.scss */
+#mask li .tooltip {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+/* line 3, ../scss/_images_animation.scss */
+#mask li {
+  -webkit-animation: cycle 10s linear infinite;
+}
+/* line 8, ../scss/_images_animation.scss */
+#mask:hover li {
+  -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes cycle {
+  /* line 18, ../scss/_images_animation.scss */
+  0% {
+    -webkit-transform: translateX(0px);
+  }
+
+  /* line 20, ../scss/_images_animation.scss */
+  29.33333% {
+    -webkit-transform: translateX(0px);
+  }
+
+  /* line 18, ../scss/_images_animation.scss */
+  33.33333% {
+    -webkit-transform: translateX(-680px);
+  }
+
+  /* line 20, ../scss/_images_animation.scss */
+  62.66667% {
+    -webkit-transform: translateX(-680px);
+  }
+
+  /* line 18, ../scss/_images_animation.scss */
+  66.66667% {
+    -webkit-transform: translateX(-1360px);
+  }
+
+  /* line 20, ../scss/_images_animation.scss */
+  96.0% {
+    -webkit-transform: translateX(-1360px);
+  }
+}
+
+/* line 1, ../scss/_progress_bar.scss */
+.progress-bar {
+  position: relative;
+  width: 680px;
+  height: 5px;
+  background: white;
+  -webkit-animation: progressBarExpand 10s ease-out infinite;
+}
+
+/* line 9, ../scss/_progress_bar.scss */
+#slider:hover .progress-bar {
+  -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes progressBarExpand {
+  /* line 18, ../scss/_progress_bar.scss */
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  /* line 20, ../scss/_progress_bar.scss */
+  29.33333% {
+    width: 100%;
+    opacity: .7;
+  }
+
+  /* line 18, ../scss/_progress_bar.scss */
+  33.33333% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  /* line 20, ../scss/_progress_bar.scss */
+  62.66667% {
+    width: 100%;
+    opacity: .7;
+  }
+
+  /* line 18, ../scss/_progress_bar.scss */
+  66.66667% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  /* line 20, ../scss/_progress_bar.scss */
+  96.0% {
+    width: 100%;
+    opacity: .7;
+  }
+}

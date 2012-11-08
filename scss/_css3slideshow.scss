@@ -27,7 +27,7 @@ $slide_percent_between_images: 4%;
 // Remaining percent divided by number of images.
 $slide_show_image_percent: (100% - ($slide_percent_between_images * $slide_nr_of_images)) / $slide_nr_of_images;
 
-//@import "compass/reset";
+@import "compass";
 @import "slideshow_layout";
 @import "images_animation";
 @import "progress_bar";
