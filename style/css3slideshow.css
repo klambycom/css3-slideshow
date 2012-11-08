@@ -39,17 +39,52 @@ img {
   0% {
     -webkit-transform: translateX(0px); }
 
-  28.33333% {
+  29.33333% {
     -webkit-transform: translateX(0px); }
 
   33.33333% {
     -webkit-transform: translateX(-680px); }
 
-  61.66667% {
+  62.66667% {
     -webkit-transform: translateX(-680px); }
 
   66.66667% {
     -webkit-transform: translateX(-1360px); }
 
-  95.0% {
+  96.0% {
     -webkit-transform: translateX(-1360px); } }
+
+.progress-bar {
+  position: relative;
+  width: 680px;
+  height: 5px;
+  background: white;
+  -webkit-animation: progressBarExpand 10s ease-out infinite; }
+
+#slider:hover .progress-bar {
+  -webkit-animation-play-state: paused; }
+
+@-webkit-keyframes progressBarExpand {
+  0% {
+    width: 0%;
+    opacity: 0; }
+
+  29.33333% {
+    width: 100%;
+    opacity: .7; }
+
+  33.33333% {
+    width: 0%;
+    opacity: 0; }
+
+  62.66667% {
+    width: 100%;
+    opacity: .7; }
+
+  66.66667% {
+    width: 0%;
+    opacity: 0; }
+
+  96.0% {
+    width: 100%;
+    opacity: .7; } }
