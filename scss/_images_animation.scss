@@ -1,7 +1,7 @@
-#mask {
+#{$slide_mask} /* #mask */ {
   // Start animation.
   li {
-    -webkit-animation: cycle $slide_total_time linear infinite;
+    -webkit-animation: cycle $slide_total_time $slide_timing_function infinite;
   }
 
   // Pause slideshow on hover.
@@ -10,6 +10,8 @@
   }
 }
 
+// Start at 0 percent.
+$slide_percent: 0%;
 // Generating keyframes.
 @-webkit-keyframes cycle {
   @for $i from 0 through $slide_nr_of_images - 1 {
